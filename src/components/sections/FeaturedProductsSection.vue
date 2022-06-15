@@ -26,26 +26,26 @@
             return {
                 cards: [
                     {
-                        img: 'black_elegant_leather_jacket.jpg',
+                        src: 'black_elegant_leather_jacket.jpg',
                         title: 'Black Leather Jacket',
                         category: 'Men,Jackets,Jeans',
                         salePrice: '$235',
                         price: '$200'
                     },
                     {
-                        img: 'black_leather_suit.jpg',
+                        src: 'black_leather_suit.jpg',
                         title: 'Black Leather Suit',
                         category: 'Men,Jackets',
                         price: '$176'
                     },
                     {
-                        img: 'blue_jacket_and_white_stripe_tee.jpg',
+                        src: 'blue_jacket_and_white_stripe_tee.jpg',
                         title: 'Blue Jacket & Stripe Tee',
                         category: 'Men,Jackets,Suits',
                         price: '$580'
                     },
                     {
-                        img: 'modern_black_leather_suit.jpg',
+                        src: 'modern_black_leather_suit.jpg',
                         title: 'Modern Black Leather Suit',
                         category: 'Men,Jackets',
                         price: '$96'
