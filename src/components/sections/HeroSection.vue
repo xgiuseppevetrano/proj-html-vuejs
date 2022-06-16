@@ -5,8 +5,8 @@
                 <h1 class="hero__info-title">Brand New Arrivals</h1>
                 <span class="hero__info-text">New collection from New York</span>
                 <div class="hero__info-button">
-                    <BigButton text="View all"/>
-                    <BigButton text="Lookbook"/>
+                    <BaseButton class="button__item button__transparent button__big" text="View all"/>
+                    <BaseButton class="button__item button__transparent button__big" text="Lookbook"/>
                 </div>
             </div>
         </div>
@@ -14,12 +14,12 @@
 </template>
 
 <script>
-    import BigButton from '../commons/BigButton.vue'
+    import BaseButton from '../commons/BaseButton.vue'
 
     export default {
         name: 'HeroSection',
         components: {
-            BigButton
+            BaseButton
         }
     }
 </script>

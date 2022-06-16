@@ -3,7 +3,7 @@
         <ul class="nav-bar__list">
             <li class="nav-bar__item" :class="{active : link.isActive}" v-for="(link, index) in links" :key="index">
                 <a class="nav-bar__item-link" href="#">{{link.text}}</a>
-                <span class="nav-bar__item-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                <span v-show="link.isDropDown" class="nav-bar__item-icon"><i class="fa-solid fa-chevron-down"></i></span>
                 <div v-show="link.isActive" class="nav-bar__item-line"></div>
             </li>
         </ul>
@@ -18,27 +18,34 @@
                 links: [
                     {
                         text: 'Home',
-                        isActive: true
+                        isActive: true,
+                        isDropDown: true
                     },
                     {
                         text: 'Shop',
-                        isActive: false
+                        isActive: false,
+                        isDropDown: true
+
                     },
                     {
                         text: 'Products',
-                        isActive: false
+                        isActive: false,
+                        isDropDown: true
                     },
                     {
                         text: 'Categories',
-                        isActive: false
+                        isActive: false,
+                        isDropDown: true
                     },
                     {
                         text: 'News',
-                        isActive: false
+                        isActive: false,
+                        isDropDown: false
                     },
                     {
                         text: 'Elements',
-                        isActive: false
+                        isActive: false,
+                        isDropDown: true
                     },
                 ]
             }
