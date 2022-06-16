@@ -51,7 +51,7 @@
         }
 
         &__scroll {
-            padding: 1.875rem .625rem;
+            padding: 1.25rem .625rem;
             background-color: var(--bg-color-scroll);
             color: var(--primary-color-text);
         }
