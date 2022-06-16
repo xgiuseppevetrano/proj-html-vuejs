@@ -4,6 +4,7 @@
         <FeaturedProductsSection/>
         <CollectionSection/>
         <BestSellerSection/>
+        <PromoSection/>
     </main>
 </template>
 
@@ -12,6 +13,7 @@
     import FeaturedProductsSection from "../sections/FeaturedProductsSection.vue";
     import CollectionSection from '../sections/CollectionSection.vue';
     import BestSellerSection from '../sections/BestSellerSection.vue';
+    import PromoSection from '../sections/PromoSection.vue';
 
     export default {
         name: 'BaseMain',
@@ -19,7 +21,8 @@
             HeroSection,
             FeaturedProductsSection,
             CollectionSection,
-            BestSellerSection
+            BestSellerSection,
+            PromoSection,
         }
     }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <section class="big-cards">
-        <BigCard class="big-card" v-for="(card, i) in cards" :key="i" :card="card"/>
+        <BigCard class="card card--big" v-for="(card, i) in cards" :key="i" :card="card"/>
     </section>
 </template>
 
@@ -45,7 +45,7 @@
         padding: 5rem 0;
         @include dflex(flex-start);
 
-        .big-card {
+        .card {
             width: calc(100% / 3);
         }
     }
