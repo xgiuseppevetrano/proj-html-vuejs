@@ -29,7 +29,7 @@
             @include dflex(center);
 
             &-line {
-                width: 35%;
+                width: 32%;
                 height: .05rem;
                 background-color: var(--quinary-color-text);
             }

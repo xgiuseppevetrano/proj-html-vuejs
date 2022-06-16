@@ -7,6 +7,9 @@
         <PromoSection/>
         <NewArrivalsSection/>
         <TestimonialSection/>
+        <BlogSection/>
+        <ProductsSection/>
+        <BrandSection/>
     </main>
 </template>
 
@@ -18,6 +21,9 @@
     import PromoSection from '../sections/PromoSection.vue';
     import NewArrivalsSection from '../sections/NewArrivalsSection.vue';
     import TestimonialSection from '../sections/TestimonialSection.vue';
+    import BlogSection from '../sections/BlogSection.vue';
+    import ProductsSection from '../sections/ProductsSection.vue';
+    import BrandSection from '../sections/BrandSection.vue';
 
     export default {
         name: 'BaseMain',
@@ -29,6 +35,9 @@
             PromoSection,
             NewArrivalsSection,
             TestimonialSection,
+            BlogSection,
+            ProductsSection,
+            BrandSection
         }
     }
 </script>
