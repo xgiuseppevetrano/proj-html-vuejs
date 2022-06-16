@@ -36,7 +36,9 @@
             
             .card__img {
                 height: 30.375rem;
+                width: 100%;
                 object-fit: cover;
+                object-position: top;
             }
 
             .card__description {
@@ -51,8 +53,7 @@
 
         &--rectangular {
             .card__img {
-                height: 15.625rem;
-                object-fit: contain;
+                height: 18.875rem;
             }
 
             .card__title {
@@ -73,12 +74,8 @@
             }
 
             .card__overlay {
-                padding: 1.25rem 2.5rem;
+                padding: 2.5rem;
             }
-        }
-
-        &__img {
-            object-position: top;
         }
 
         &__overlay {
