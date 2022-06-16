@@ -8,6 +8,7 @@
         <NewArrivalsSection/>
         <TestimonialSection/>
         <BlogSection/>
+        <div class="line"></div>
         <ProductsSection/>
         <BrandSection/>
     </main>
@@ -41,3 +42,15 @@
         }
     }
 </script>
+
+<style lang="scss" scoped>
+    main {
+
+        .line {
+            margin: auto;
+            width: 97%;
+            height: .0625rem;
+            background-color: var(--primary-bg-color);
+        }
+    }
+</style>

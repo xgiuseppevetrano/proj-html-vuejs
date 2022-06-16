@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="products">
 
     </section>
 </template>
@@ -11,5 +11,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+    .products {
+        margin: 5rem 0;
+    }
 </style>
