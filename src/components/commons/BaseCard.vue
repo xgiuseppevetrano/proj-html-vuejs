@@ -23,10 +23,6 @@
     .card {
         line-height: 1.5625rem;
 
-        &__img {
-            width: 100%;
-        }
-
         &__title {
             color: var(--secondary-color-text);
         }
