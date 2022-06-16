@@ -51,7 +51,7 @@
 
         &--rectangular {
             .card__img {
-                height: 14.375rem;
+                height: 15.625rem;
                 object-fit: contain;
             }
 
@@ -78,7 +78,6 @@
         }
 
         &__img {
-            width: 100%;
             object-position: top;
         }
 

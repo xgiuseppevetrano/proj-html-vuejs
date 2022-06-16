@@ -60,7 +60,7 @@
     @import '../../assets/style/mixins.scss';
 
     .products {
-        padding: 5rem 0;
+        margin: 5rem 0;
 
         &__cards {
             @include dflex(center);

@@ -42,7 +42,7 @@
     @import '../../assets/style/mixins.scss';
 
     .big-cards {
-        padding: 5rem 0;
+        margin: 5rem 0;
         @include dflex(flex-start);
 
         .card {

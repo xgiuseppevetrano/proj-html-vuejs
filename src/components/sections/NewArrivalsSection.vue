@@ -41,7 +41,7 @@
     @import '../../assets/style/mixins.scss';
 
     .best-seller {
-        padding: 5rem 0;
+        margin: 5rem 0;
 
         &__box {
             @include dflex(center);

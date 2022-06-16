@@ -46,14 +46,11 @@ import BigCard from '../commons/BigCard.vue'
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 4.375rem 0;
+        margin: 5rem 0;
+        padding: 40px 0;
 
         &__cards {
-            @include dflex(center);
-
-            .card {
-                margin: 30px;
-            }
+            @include dflex(space-around);
         }
     }
 </style>

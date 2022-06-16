@@ -6,6 +6,7 @@
         <BestSellerSection/>
         <PromoSection/>
         <NewArrivalsSection/>
+        <TestimonialSection/>
     </main>
 </template>
 
@@ -16,6 +17,7 @@
     import BestSellerSection from '../sections/BestSellerSection.vue';
     import PromoSection from '../sections/PromoSection.vue';
     import NewArrivalsSection from '../sections/NewArrivalsSection.vue';
+    import TestimonialSection from '../sections/TestimonialSection.vue';
 
     export default {
         name: 'BaseMain',
@@ -26,10 +28,7 @@
             BestSellerSection,
             PromoSection,
             NewArrivalsSection,
+            TestimonialSection,
         }
     }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
