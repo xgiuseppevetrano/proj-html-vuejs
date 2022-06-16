@@ -1,9 +1,12 @@
 <template>
-    <div class="card" :style="{backgroundImage: `url(${require('@/assets/img/' + card.src)})`}">
-        <h3 class="card__title">{{card.title}}</h3>
-        <small class="card__description">{{card.description}}</small>
-        <div>
-            <BaseButton class="button__item button__transparent button__small" :text="card.button"/>
+    <div class="card">
+        <img class="card__img" :src="require(`../../assets/img/${card.src}`)" :alt="card.title">
+        <div class="card__overlay">
+            <h2 class="card__title">{{card.title}}</h2>
+            <small class="card__description">{{card.description}}</small>
+            <div>
+                <BaseButton class="button__item button__transparent button__small" :text="card.button"/>
+            </div>
         </div>
     </div>
 </template>
@@ -24,8 +27,29 @@
 
 <style lang="scss" scoped>
     .card {
-        padding: 3.125rem;
         background-size: cover;
         text-align: center;
+        color: var(--primary-color-text);
+        position: relative;
+
+        &__img {
+            width: 100%;
+            height: 30.375rem;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        &__overlay {
+            position: absolute;
+            bottom: 2.5rem;
+            left: 0;
+            right: 0;
+            padding: 1.25rem;
+        }
+
+        &__description {
+            display: inline-block;
+            margin: .9375rem 0;
+        }
     }
 </style>
