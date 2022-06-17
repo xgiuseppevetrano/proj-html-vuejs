@@ -8,7 +8,7 @@
                 </div>
                 <form class="footer-top__form">
                     <input class="footer-top__input" type="text" placeholder="Insert your email">
-                    <BaseButton class="button__item button__blue button__long" text="Send"/>
+                    <BaseButton class="button__item button__blue button__long button__hover" text="Send"/>
                 </form>
             </div>
         </div>

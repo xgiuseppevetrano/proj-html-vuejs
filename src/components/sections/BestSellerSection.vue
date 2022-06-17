@@ -6,12 +6,7 @@
                 <div class="best-seller__scroll">
                     <i class="fa-solid fa-chevron-left"></i>
                 </div>
-                <div class="best-seller__images" v-for="(image, i) in images" :key="i">
-                    <img class="best-seller__img" :src="require(`../../assets/img/${image}`)">
-                    <div class="best-seller__overlay">
-                        <span class="best-seller__overlay-text"><i class="fa-regular fa-square-check"></i></span>
-                    </div>
-                </div>
+                <BaseImage v-for="(image, i) in images" :key="i" :image="image"/>
                 <div class="best-seller__scroll">
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
@@ -21,21 +16,48 @@
 </template>
 
 <script>
-    import BaseTitle from '../commons/BaseTitle.vue'
+    import BaseTitle from '../commons/BaseTitle.vue';
+    import BaseImage from '../commons/BaseImage.vue';
 
     export default {
         name: 'BestSellerSection',
         components: {
-            BaseTitle
+            BaseTitle,
+            BaseImage
         },
         data() {
             return {
                 images: [
-                    'spring_printed_dress-200x260.jpg',
-                    'modern_love_tee-200x260.jpg',
-                    'black_leather_jacket-200x260.jpg',
-                    'black_elegant_leather_jacket-200x260.jpg',
-                    'hipster_black_top-200x260.jpg'
+                    {
+                        src: 'spring_printed_dress-200x260.jpg',
+                        name: 'Spring Dress',
+                        category: 'Woman, Dress',
+                        price: '$47',
+                    },
+                    {
+                        src: 'modern_love_tee-200x260.jpg',
+                        name: 'Modern Love Tee',
+                        category: 'Woman, T-shirt',
+                        price: '$68',
+                    },
+                    {
+                        src: 'black_leather_jacket-200x260.jpg',
+                        name: 'Black Leather Jacket',
+                        category: 'Man, Jacket',
+                        price: '$200',
+                    },
+                    {
+                        src: 'black_elegant_leather_jacket-200x260.jpg',
+                        name: 'Black Elegant Jacket',
+                        category: 'Woman, Jacket',
+                        price: '$125',
+                    },
+                    {
+                        src: 'hipster_black_top-200x260.jpg',
+                        name: 'Hipster Black Top',
+                        category: 'Woman, T-shirt',
+                        price: '57$',
+                    },
                 ]
             }
         }
@@ -57,39 +79,6 @@
             padding: 1.25rem .625rem;
             background-color: var(--bg-color-scroll);
             color: var(--primary-color-text);
-        }
-
-        &__images {
-            position: relative;
-            margin: .3125rem;
-
-            &:hover .best-seller__overlay {
-                background: linear-gradient(to bottom, rgba(66,126,209, 0.8) 0%, rgba(226,130,178, 1) 100%);
-            }
-
-            &:hover .best-seller__overlay-text {
-                display: block;
-            }
-        }
-
-        &__overlay {
-            @include dflex(center);
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            text-align: center;
-            
-            &-text {
-                padding: .8125rem 1.0625rem;
-                background-color: var(--quaternary-bg-color);
-                color: var(--primary-color-text);
-                border-radius: 50%;
-                font-size: 1.25rem;
-                cursor: pointer;
-                display: none;
-            }
         }
     }
 </style>
