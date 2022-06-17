@@ -15,7 +15,7 @@
     .button {
         &__item {
             text-transform: uppercase;
-            padding: .625rem 1.25rem;
+            padding: .5rem 1.125rem;
             color: var(--primary-color-text);
             border-radius: 1.25rem;
             font-weight: 600;
@@ -24,8 +24,7 @@
 
         &__blue {
             background-color: var(--bg-color-button);
-            border: none;
-
+            border: 1px solid transparent;
         }
 
         &__transparent {
@@ -46,6 +45,10 @@
 
         &__long {
             padding: .5rem 2.5rem;
+        }
+
+        &__hover:hover {
+            background-color: var(--bg-color-button-hover);
         }
     }
 </style>

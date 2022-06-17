@@ -5,7 +5,7 @@
                 <BaseLogo/>
                 <div class="header-bottom__elements">
                     <BaseNav :links="links"/>
-                    <BaseButton class="button__item button__blue" text="Shop Now!"/>
+                    <BaseButton class="button__item button__blue button__hover" text="Shop Now!"/>
                     <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
             </div>

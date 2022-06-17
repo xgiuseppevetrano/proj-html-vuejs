@@ -4,7 +4,7 @@
             <BaseTitle title="Featured Products" text="Must have products from our top sellers"/>
             <RectangularButton/>
             <div class="products__cards">
-                <BaseCard class="products__card" v-for="(card, index) in cards" :key="index" :card="card"/>
+                <BaseCard class="products__card card card__hover" v-for="(card, index) in cards" :key="index" :card="card"/>
             </div>
         </div>
     </section>
