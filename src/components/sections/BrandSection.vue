@@ -43,7 +43,7 @@
 
         &__box {
             margin-top: 1.875rem;
-            @include dflex(space-around);
+            @include dflex(space-between);
         }
     }
 </style>

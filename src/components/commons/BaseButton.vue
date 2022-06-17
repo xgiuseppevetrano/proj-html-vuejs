@@ -43,5 +43,9 @@
             font-size: .75rem;
             margin-right: 0;
         }
+
+        &__long {
+            padding: .5rem 2.5rem;
+        }
     }
 </style>
