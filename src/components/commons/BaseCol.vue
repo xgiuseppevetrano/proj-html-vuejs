@@ -1,5 +1,5 @@
 <template>
-    <div class="col">
+    <div>
         <h5 class="col__title">{{col.title}}</h5>
         <div class="col__products">
             <div class="row" v-for="(product, i) in col.products" :key="i">
@@ -25,7 +25,7 @@
         name: 'BaseCol',
         props: {
             col: Object
-        }
+        },
     }
 </script>
 
@@ -39,7 +39,6 @@
 
         &__title {
             text-transform: uppercase;
-            color: var(--septenary-color-text);
             font-weight: 500;
             margin-bottom: 1.875rem; 
         }
@@ -86,5 +85,19 @@
                 height: 5rem;
             }
         }
+    }
+
+    .col-white {
+        color: var(--quinary-color-text);
+
+        .row {
+            border-bottom: 1px solid var(--senary-color-text);
+
+            &__promo-price,
+            &__price {
+                color: var(--quinary-color-text);
+            }
+        }
+
     }
 </style>

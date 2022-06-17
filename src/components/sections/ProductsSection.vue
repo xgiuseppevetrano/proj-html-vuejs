@@ -2,7 +2,7 @@
     <section class="products">
         <div class="container">
             <div class="products__box">
-                <BaseCol class="products__col" v-for="(col, i) in cols" :key="i" :col="col"/>
+                <BaseCol class="products__col col" v-for="(col, i) in cols" :key="i" :col="col"/>
             </div>
         </div>
     </section>

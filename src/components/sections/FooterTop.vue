@@ -42,7 +42,7 @@
         }
 
         &__icon {
-            color: var(--tertiary-color-text);
+            color: var(--septenary-color-text);
             padding: .5rem .625rem;
             background-color: var(--tertiary-bg-color);
             border-radius: 50%;
