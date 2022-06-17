@@ -1,6 +1,6 @@
 <template>
     <header>
-        <HeaderTop class="header-top"/>
+        <HeaderTop class="border-bottom"/>
         <HeaderBottom/>
     </header>
 </template>
@@ -19,7 +19,7 @@
 </script>
 
 <style lang="scss" scoped>
-    .header-top {
+    .border-bottom {
         border-bottom: 1px solid var(--quinary-color-text);
     }
 </style>
