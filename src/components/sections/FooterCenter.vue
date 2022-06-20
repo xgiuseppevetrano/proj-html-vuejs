@@ -4,7 +4,7 @@
             <div class="footer-center__box">
                 <div class="footer-center__col">
                     <img class="footer-center__col-logo" src="../../assets/img/classic_shop_logo_footer.png" alt="logo img">
-                    <small class="footer-center__col-andress">
+                    <small class="footer-center__col-address">
                         12345 North Main Street,<br>
                         New York, NY 555555<br>
                         Phone: 1.800.555.6789<br>
@@ -18,15 +18,11 @@
                 </div>
                 <div class="footer-center__col">
                     <h5 class="footer-center__col-title">Recent Posts</h5>
-                    <div>
-                        <small class="footer-center__col-posts" v-for="(post, i) in posts" :key="i"><i class="fa-solid fa-angle-right"></i>{{post}}</small>
-                    </div>
+                    <BasePosts v-for="(post, i) in posts" :key="i" :post="post"/>
                 </div>
                 <div class="footer-center__col">
                     <h5 class="footer-center__col-title">Tags</h5>
-                    <div>
-                        <small class="footer-center__col-link" v-for="(tag, i) in tags" :key="i">{{tag}}</small>
-                    </div>
+                    <BaseTags v-for="(tag, i) in tags" :key="i" :tag="tag"/>
                 </div>
             </div>
         </div>
@@ -36,12 +32,16 @@
 <script>
     import BaseCol from '../commons/BaseCol.vue'
     import SocialNetwork from '../commons/SocialNetwork.vue'
+    import BasePosts from '../commons/BasePosts.vue'
+    import BaseTags from '../commons/BaseTags.vue'
 
     export default {
         name: 'FooterCenter',
         components: {
             SocialNetwork,
-            BaseCol
+            BaseCol,
+            BasePosts,
+            BaseTags
         },
         data() {
             return {
@@ -128,7 +128,7 @@
                 margin: 1.25rem 0;
             }
 
-            &-andress {
+            &-address {
                 margin: 1.875rem 0 3.125rem;
                 display: inline-block;
                 line-height: 1.5625rem;
@@ -142,24 +142,6 @@
                 text-transform: uppercase;
                 font-weight: 500;
                 margin-bottom: 1.875rem; 
-            }
-
-            &-posts {
-                display: inline-block;
-                border-bottom: 1px solid var(--senary-color-text);
-                padding: .9375rem 0;
-                display: flex;
-
-                .fa-angle-right {
-                    margin-right: .625rem;
-                }
-            }
-
-            &-link {
-                border: 1px solid var(--senary-color-text);
-                padding: .3125rem;
-                display: inline-block;
-                margin: .1875rem;
             }
         }
     }

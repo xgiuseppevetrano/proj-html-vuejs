@@ -19,7 +19,7 @@
     export default {
         name: 'BaseImage',
         props: {
-            image: Array
+            image: Object
         }
     }
 </script>

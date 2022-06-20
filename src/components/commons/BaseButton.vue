@@ -44,7 +44,7 @@
         }
 
         &__long {
-            padding: .5rem 2.5rem;
+            padding: .375rem 2.5rem;
         }
 
         &__hover:hover {
